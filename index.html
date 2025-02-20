@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🚀 ยืนยันตัวตนเพื่อเข้าสู่จักรวาลเกม! 🌌 (ทดสอบ reCAPTCHA)</title>
+  <meta name="description" content="ทดสอบ Google reCAPTCHA สำหรับยืนยันตัวตนก่อนเข้าหน้าเกม">
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script>
+    function onSubmit(token) {
+      alert("✅ ยืนยันสำเร็จ! ระบบกำลังพาคุณไปยังหน้าปลายทาง...");
+      setTimeout(function() {
+        window.location.href = "https://lin.ee/8tiBOlc";
+      }, 1500);
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+    body {
+      background: radial-gradient(circle at center, #000428, #004e92);
+      font-family: 'Orbitron', sans-serif;
+      color: #00d9ff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+    }
+    .container {
+      background-color: rgba(0, 0, 0, 0.85);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(0, 255, 255, 0.8);
+      max-width: 500px;
+      width: 90%;
+      border: 2px solid #00d9ff;
+    }
+    h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #00d9ff;
+      text-shadow: 0 0 10px rgba(0, 217, 255, 0.8);
+    }
+    p {
+      font-size: 16px;
+      margin-bottom: 25px;
+      color: #b3ecff;
+    }
+    .g-recaptcha {
+      margin-top: 20px;
+      transform: scale(1.2);
+    }
+    .game-logo {
+      width: 120px;
+      margin-bottom: 20px;
+      filter: drop-shadow(0 0 10px rgba(0, 217, 255, 0.8));
+    }
+    .footer {
+      margin-top: 20px;
+      font-size: 12px;
+      color: #66c2ff;
+    }
+    .neon-border {
+      border: 2px solid #00d9ff;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 217, 255, 0.9);
+    }
+  </style>
+</head>
+<body>
+  <div class="container neon-border">
+    <img src="https://cdn-icons-png.flaticon.com/512/1055/1055646.png" alt="Game Logo" class="game-logo">
+    <h1>🌌 ยืนยันตัวตนเพื่อเข้าสู่จักรวาลเกม! 🌌</h1>
+    <p>กรุณาคลิกปุ่มด้านล่างเพื่อยืนยันว่าคุณไม่ใช่บอท 🚀</p>
+    <form action="?" method="POST">
+      <button class="g-recaptcha" 
+              data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" 
+              data-callback='onSubmit' 
+              data-action='submit'>
+        ✅ ยืนยันและเริ่มการผจญภัย
+      </button>
+    </form>
+    <div class="footer">© 2024 Sci-Fi Gaming Universe | การทดสอบ reCAPTCHA 🪐</div>
+  </div>
+</body>
+</html>
